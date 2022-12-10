@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net48</TargetFramework>
+	<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>STMNExtension</RootNamespace>
+    <BaseOutputPath>..\..\..\extensions\STMNExtension</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GTranslate" Version="2.1.1" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="mpvnet">
+      <HintPath>..\mpv.net-6.0.3.0-beta\mpvnet.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy ..\..\..\extensions\STMNExtension\Debug\net48\*.dll ..\..\..\extensions\STMNExtension\*" />
+  </Target>
+
+</Project>
