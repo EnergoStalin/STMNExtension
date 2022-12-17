@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "mpvnet": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\..\\..\\scripts-dev\\STMNExtension\\mpv.net\\mpvnet.exe",
+      "nativeDebugging": true
+    }
+  }
+}

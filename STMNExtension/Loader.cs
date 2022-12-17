@@ -8,6 +8,7 @@ namespace STMNExtension
 {
     internal class Loader
     {
+
         public Loader() { }
 
         public void AutoLoad()
@@ -20,6 +21,15 @@ namespace STMNExtension
             {
                 return;
             }
+        }
+
+        public void Load()
+        {
+        }
+
+        public void Unload()
+        {
+
         }
     }
 }

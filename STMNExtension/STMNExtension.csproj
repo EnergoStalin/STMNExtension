@@ -14,8 +14,7 @@
 
   <ItemGroup>
     <Reference Include="mpvnet">
-      <HintPath>..\mpv.net-6.0.3.0-beta\mpvnet.exe</HintPath>
-      <Private>False</Private>
+      <HintPath>..\mpv.net\mpvnet.exe</HintPath>
     </Reference>
   </ItemGroup>
 
